@@ -1,0 +1,59 @@
+.main{
+    background-image: url(./paltan-world-banner-desktop-s11.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+  
+}
+.inner{
+    width: 100%;
+}
+.prt1{
+    background-image: url(./puneri-tv-2024.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.prt2{
+    background-image: url(./puneri-gallery-2024.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.prt1,.prt2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.prt1 h3,.prt2 h3{
+    font-size: 70px;
+    color: white;
+    letter-spacing: 6px;
+    text-transform:uppercase;
+}
+
+@media screen and (min-width:991px) and (max-width:1280px) {
+    
+   }
+
+   /* tablet */
+@media(min-width:768px) and (max-width:990px) {
+    .main{
+        height: 280px;
+    }
+   }
+
+@media (max-width:767px) {
+    .main{
+        background-image: url(./paltan-world-banner-mobile_s11.png);
+    }
+    .prt1 h3,.prt2 h3{
+        font-size: 45px;
+        text-align: center;
+    }
+}

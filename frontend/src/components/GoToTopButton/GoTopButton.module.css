@@ -1,0 +1,25 @@
+.goTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f40;
+    color: white;
+    border: none;
+    padding:15px;
+    font-size: 16px;
+    border-radius: 37px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.goTopHidden {
+    display: none;
+}
+
+.goTopIcon {
+    font-size: 24px;  
+}

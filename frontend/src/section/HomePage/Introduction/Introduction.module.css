@@ -1,0 +1,60 @@
+
+.main{
+    width:100%   ;
+    height: 100vh ;
+    background-image: url("./../../../assets/images/home-banner-new-design.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main2{
+  width:100%   ;
+  height: 100vh ;
+  background-image: url("./../../../assets/images/homepage-mobile-banner-s11.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: none;
+}
+
+/* laptop */
+@media screen and (min-width:991px) and (max-width:1280px) {
+    .main{
+      width:100%  ;
+      height: 100vh ;
+     
+    }
+   }
+
+   /* tablet */
+@media(min-width:768px) and (max-width:990px) {
+    .main{
+      display: none;
+    }
+    .main2{
+      display: inline-block;
+    }
+    .gill{
+      height:405px;
+     }
+   }
+
+@media (max-width:767px) {
+  .main{
+    display: none;
+  }
+   .main2{
+    display: inline-block;
+    width: 100%;
+    /* height: 100vh; */
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    top: -91px;
+   }
+   .gill{
+    height: 220px;
+   }
+}
+
+

@@ -1,0 +1,37 @@
+.title_band{
+    background-color: #f40;
+    position: relative;
+    padding: 20px 30px;
+    margin-left: -12px;
+    width: 450px;
+    font-family: "Exo";
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    text-align: right;
+    transform: skew(-15deg);
+}
+.title_band::before{
+    content: '';
+    background-color: #f40;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 10px;
+    height: 73px;
+}
+.title_band::after{
+    content: '';
+    background-color: #f40;
+    position: absolute;
+    right: -36px;
+    top: 0;
+    width: 7px;
+    height: 73px;
+}
+
+@media (max-width: 767px) {
+    .title_band{
+        width: 250px;
+    }
+}

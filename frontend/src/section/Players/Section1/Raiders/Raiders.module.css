@@ -1,0 +1,161 @@
+.raider{
+    position: relative;
+    padding-bottom: 50px;
+    width: 99%;
+}
+.parent{
+    margin-top: 20px;
+}
+.title_band{
+    background-color: #f40;
+    position: relative;
+    padding: 20px 30px;
+    margin-left: -12px;
+    width: 550px;
+    font-family: "Exo";
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    text-align: right;
+    width: 430px;
+    letter-spacing: 3px;
+    margin-top: 110px;
+    margin-bottom: 60px;
+    transform: skew(-15deg);
+}
+.title_band::before{
+    content: '';
+    background-color: #f40;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 10px;
+    height: 73px;
+}
+.title_band::after{
+    content: '';
+    background-color: #f40;
+    position: absolute;
+    right: -36px;
+    top: 0;
+    width: 7px;
+    height: 73px;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 200px;
+
+    /* padding: 0px 120px; */
+    /* margin: 0px 20px; */
+    
+}
+.images img{
+    width: 250px;
+    height: 250px;
+}
+.name{
+    text-align: center !important;
+    padding-right: 14px !important;
+    
+}
+.col{
+    text-align: center;
+}
+.team_fname{
+    font-family: "Exo";
+    color: #000;
+    font-size: 35px;
+    margin: 0;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+.team_lname{
+    font-family: "Exo";
+    color: #000;
+    font-size: 35px;
+    margin: 0;
+    margin-top: -6px;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.team_position{
+
+    font-family: "Exo";
+    color: #ff7500;
+    font-size: 20px;
+    margin: 0;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    opacity: 1;
+    transition: all .5s ease-in;
+}
+
+
+@media screen and (min-width:991px) and (max-width:1280px) {
+    .images{
+
+        padding: 0 130px;
+        width: 100%;
+    }
+   }
+
+   /* tablet */
+@media(min-width:768px) and (max-width:990px) {
+    .images{
+        padding: 0px 50px !important;
+        width: 100%;
+        gap: 25px;
+
+    }
+    .name{
+        text-align: center;
+        padding-left: 62px;
+        
+    }
+   }
+
+@media (max-width:767px) {
+    .name{
+        /* padding-left: 60px; */
+        text-align: center !important;
+    }
+    .parent{
+        margin: 0px;
+    }
+    .raider{
+        width: 100%;
+    }
+    .images img{
+        height: 250px !important;
+    }
+    .images{
+        width: 100%;
+        padding: 40px;
+        align-items: center;
+        
+        /* justify-content: center; */
+    }
+    .title_band{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 280px;
+        padding: 20px 0;
+        font-size: 20px;
+        text-align: center;
+    }
+    .title_band::before{
+        height: 62px;
+    }
+    .title_band::after{
+        height: 62px;
+    }
+    .team_fname,.team_lname,.team_position{
+        width: 130%;
+    }
+
+    
+}

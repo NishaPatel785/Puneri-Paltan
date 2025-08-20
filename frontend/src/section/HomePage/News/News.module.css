@@ -1,0 +1,248 @@
+.mainnews {
+    background-image: url(../../../assets/images/news-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin-right: 0;
+    width: 100%;
+}
+
+.mainnews .news {
+    width: 90%;
+    height: 561px;
+    margin-bottom: 50px;
+    position: relative;
+    background-image: url(../../../assets/images/news-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.news div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px !important;
+}
+
+.news .h1 {
+    font-size: 90px !important;
+    text-align: center;
+    letter-spacing: 7px;
+    margin: 0;
+    color: #ff7500;
+}
+
+.news .h2 {
+    font-size: 90px !important;
+    text-align: center;
+    color: white;
+    margin-top: -80px;
+    letter-spacing: 7px;
+}
+.btn{
+    text-align: center !important;
+}
+
+.subscribe {
+    background-color: #ff7500;
+    height: 100px;
+    position: absolute;
+    bottom: -50px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -50px;
+    background-image: none;
+    border: 0;
+    box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+    transform: skew(-15deg);
+}
+
+.subscribe h3 {
+    transform: skew(15deg);
+    color: white;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.sub {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+}
+
+.sub input {
+    background-color: white;
+    outline: 0;
+    font-family: "Exo";
+    box-shadow: none;
+    margin-bottom: 0;
+    border: none;
+    padding: 10px;
+    height: 50px;
+    width: 300px;
+    border-bottom: 1px solid #f44336;
+}
+
+.sub input::placeholder {
+    transform: skew(15deg);
+}
+
+.inputbut {
+    margin: 0;
+    padding: 0;
+}
+
+.inputbut button {
+    transform: skew(-5deg);
+    padding: 8px 15px;
+    width: 50px;
+    margin-top: 3px;
+}
+
+/* Medium screen devices (991px to 1280px) */
+@media screen and (min-width: 991px) and (max-width: 1280px) {
+    .mainnews {
+        width: 100%;
+        height: auto;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+
+    .btn button {
+        position: absolute !important;
+        bottom: 99px !important;
+        left: 28%;
+    } 
+} 
+
+
+/* Tablet devices (768px to 990px) */
+@media (min-width: 768px) and (max-width: 990px) {
+    .mainnews{
+        width: 100%;
+        height: auto;
+    }
+    .mainnews .news{
+        width: 98%;
+        height: 300px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .btn button {
+        position: absolute ;
+        bottom: 129px ;
+        right: 31% ;
+    }
+
+    .subscribe h3 {
+        width: 90%; 
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .news .h1 {
+        font-size: 60px !important;
+        letter-spacing: 3px;
+        position: absolute;
+        top: 20%;
+       
+    }
+
+    .news .h2 {
+        font-size: 55px !important; 
+         position: absolute;
+        top: 70%;
+        height: 100px;
+    }
+
+    .sub input {
+        width: 193px;
+    }
+    .sub{
+        padding: 20px;
+        padding-right: 100px;
+    }
+
+    /* .inputbut button {
+        margin: 18px;
+    } */
+
+    .mainnews {
+        padding-top: 100px;
+        padding-bottom:100px;
+    }
+
+    
+}
+
+/* Mobile devices (767px and below) */
+@media (max-width: 767px) {
+    .mainnews {
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .news .h1 {
+        font-size: 70px !important;
+        letter-spacing: 3px;
+    }
+
+    .news .h2 {
+        font-size: 34px !important;
+        letter-spacing: 3px;
+        padding-top: 57px;
+    }
+
+    .subscribe {
+        height: 140px;
+        bottom: -60px;
+        width: 82%;
+    }
+
+    .sub input {
+        width: 220px;
+        height: 40px;
+    }
+
+    .inputbut button {
+        width: 45px;
+        height: 40px;
+        position: absolute;
+        bottom: 20px;
+        right: 5px;
+    }
+
+    .btn{
+        text-align: center !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    .rowmi{height: 50px;text-align: center;margin-right: 76px;}
+
+    .sub {
+        padding: 0px;
+        flex-direction: column;
+       align-items: flex-start;
+       margin-left: 10px;
+    }
+
+    .subscribe h3 {
+        font-size: 22px;
+        width: 250px;
+        text-align: center;
+    }
+}

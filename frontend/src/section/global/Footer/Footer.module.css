@@ -1,0 +1,104 @@
+.footer{
+    height: auto;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+    height: 100px;
+}
+.icon{
+    display: flex;
+    transition: all .5s ease;
+}
+.icon a{
+    background-color: #444452;
+    padding: 15px 15px;
+    border-radius: 50%;
+    color: #000;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    margin-right: 15px;
+    transition: all .5s ease;
+    text-decoration: none;
+    display: flex;
+    margin: 10px;
+    transition: all .5s ease;
+}
+.mpara{
+    color: white;
+    font-family: "Exo";
+    font-size: 18px;
+}
+
+.footlogo .p1{
+    color: #fff;
+    font-family: "lato-black";
+    background-color: #ff7500;
+    margin-bottom: 3px;
+    padding: 1px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    font-size: 7px;
+    text-transform: uppercase;
+    width: 53px;
+    margin-right: 5px;
+}
+.footlogo .p2{
+    color: #fff;
+    font-family: "lato-black";
+    background-color: #ff7500;
+    background-color: #ff7500;
+    margin-bottom: 3px;
+    padding: 1px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    font-size: 7px;
+    text-transform: uppercase;
+    width: 15px;
+    
+}
+.footlogo img{
+    width: 100px;
+    height: 30px;
+}
+.sign{
+    display: flex;
+    flex-direction: column;
+}
+.footlogo{
+    display: flex;
+}
+.circle:hover svg{
+    color: white;
+   
+}
+.circle:hover a{
+
+    background-color: #ff7500;
+
+}
+
+@media screen and (min-width:991px) and (max-width:1280px) {
+    
+   }
+
+   /* tablet */
+@media(min-width:768px) and (max-width:990px) {
+    .footer{
+        padding: 30px 20px;
+        height: 200px;
+        flex-direction: column;
+        width: 100%;
+        }
+   }
+
+@media (max-width:767px) {
+    .footer{
+    padding: 30px 20px;
+    height: 200px;
+    flex-direction: column;
+    }
+}

@@ -1,0 +1,219 @@
+.second_slide{
+    background-color: black;
+    transform: skew(-5deg);
+    width: 80%;
+    margin-left: 120px;
+    position: relative;
+    bottom: 70px;
+    z-index: 10;
+}
+
+.player_num{
+    position: absolute;
+    background-color: #ff7500;
+    color: white;
+    font-family: "Exo";
+    font-size: 30px;
+    letter-spacing: 2px;
+    
+}
+.second_slide :global(.slick-slide) {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+  }
+  .second_slide :global(.slick-slide:not(.slick-center) img) {
+    filter: brightness(1); /* Darkens the non-centered images */
+    transition: all 0.3s ease-in-out;
+  }
+  .owl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+  .owl h2{
+    text-align: center;
+    line-height: 1;
+    color: #ff7500;
+    font-size: 110px !important;
+    letter-spacing: 7px;
+    position:relative;
+  }
+  .first{
+    font-family: "Exo-Regular";
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    letter-spacing: 4px;
+    text-align: center;
+  }
+  .last{
+    font-family: "Exo-Bold";
+    color: white;
+    font-size: 34px;
+    margin: 0;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: -7px;
+  }
+  .p1{
+    font-family: "Exo-Regular";
+    color: #ff7500;
+    font-size: 20px;
+    margin: 0;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: all .5s ease-in;
+  }
+  .second_slide .faleft,.second_slide .faright{
+    width:60px;
+      height: 40px;
+      border-radius: 25px;
+      background-color: #f40;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      padding-top: 10px;
+  }
+  .second_slide .faleft path,.second_slide .faright path{
+    transform: scale(0.5);
+  }
+
+  .second_slide .faright{
+
+    position: absolute; 	
+    right: -5px;
+  }
+  .colly{
+    display: flex;
+ 
+    transform: skew(5deg);
+        height: 400px;
+  }
+  .colly1{
+    align-self: center;
+
+  }
+  .colly2{
+    transform: skew(5deg);
+    align-self: flex-end;
+     
+  }
+  .colly2 img{
+    bottom: 0px;
+    position: absolute;
+    transform: skew(-5deg);
+  }
+  .second_slide:global(.slick-prev::before),
+  .second_slide:global(.slick-next::before) {
+  /* font-size: 35px; */
+  display: none !important;
+
+}
+  .second_slide :global(.slick-prev),
+  .second_slide :global(.slick-next) {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    
+  }
+  
+  .second_slide :global(.slick-prev) {
+
+    position: absolute;
+    left: -30px;
+    
+
+  }
+ 
+
+  .second_slide:global(.slick-next) {
+    position: absolute; 	
+    right: -30px;
+  }
+
+  @media(min-width:768px) and (max-width:990px) {
+    .second_slide{
+      transform: skew(0deg);
+      margin-left: 20px;
+    width: 95%;
+
+    }
+    .colly2 img{
+      transform: skew(-5deg);
+    }
+    .colly{
+      transform:skew(0deg);
+    }
+    .owl h2{
+      font-size: 80px !important;
+    }
+    .second_slide :global(.slick-next) {
+      right: -10px;
+      
+    }
+  }
+ 
+  
+
+  @media (max-width:767px) {
+
+    .second_slide .faleft,.second_slide .faright{
+      width:40px;
+        height: 29px;
+        border-radius: 25px;
+        background-color: #f40;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        padding-top: 10px;
+    }
+
+    .second_slide .faright{
+ 	
+      right: -9px;
+    }
+    .second_slide :global(.slick-prev) {
+
+      position: absolute;
+      left: -9px;
+      
+  
+    }
+    .second_slide{
+      transform: skew(0deg);
+      margin: 10px;
+    width:94%;
+
+    }
+    .colly2 img{
+      transform: skew(0deg);
+    }
+    .colly2{
+      transform: skew(0deg);
+    }
+    .colly{
+      transform: skew(0deg);
+      flex-direction: column;
+      height: 500px;
+    }
+    .owl h2{
+      font-size: 50px !important;
+    }
+    .colly1{
+      margin-top: 90px;
+    }
+    .second_slide :global(.slick-next) {
+      right: 0px;
+      
+    }
+    /* .second_slide :global(.slick-prev) {
+      right: -50px;
+      
+    } */
+    .Igo{
+      padding-left: 33px;
+    }
+
+  }

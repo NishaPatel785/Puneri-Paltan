@@ -1,0 +1,41 @@
+
+
+.inner_btn{
+    transform: skew(-15deg);
+    letter-spacing: 3px;
+    background-color: #f40;
+    color: white;
+    font-family: "Exo";
+    font-size: 18px;
+    padding: 7px 42px;
+    width: 90%;
+    text-transform: capitalize;
+    margin-left: -9px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    line-height: 1.4;
+    height: 66px;
+    display: -webkit-box;
+    line-height: 1.4;
+    text-overflow: ellipsis;
+    height: 3.1em;
+}
+.inner_btn::before{
+    content: '';
+    background-color: #f40;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 10px;
+    height: 55px;
+}
+.inner_btn::after{
+    content: '';
+    background-color: #f40;
+    position: absolute;
+    right: -36px;
+    top: 0;
+    width: 7px;
+    height: 55px;
+}

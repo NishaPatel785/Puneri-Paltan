@@ -1,0 +1,213 @@
+
+
+.container{
+    background-image: url("./banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+}
+.inner_sec{
+    vertical-align: bottom;
+    text-align: center;
+    padding-bottom: 130px;
+}
+.inner_sec h1{
+    /* position: absolute;
+    top: 30%; */
+    color: white;
+    font-size: 90px;
+    top: 32%;
+    letter-spacing: 12px;
+    position: absolute;
+    left: 30%;
+    transform: translateX(-50%);
+    text-shadow: -2px 0 24px #000;
+}
+.inner_sec img{
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 140px;
+    left: 40px;
+}
+.outer_sec img{
+    margin: 0 auto;
+
+    display: block;
+    max-width: 70%;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.videoThumbnail{
+    height: 400px;
+    width: 100%;
+   
+}
+.hidden{
+    display: none;
+}
+
+.vidlogo{
+    position: relative;
+    top: -60%;
+    right: -44%;
+}
+
+.box{
+    transform: skew(-15deg);
+    letter-spacing: 3px;
+    background-color: #f40;
+    color: white;
+    font-family: "Exo";
+    font-size: 18px;
+    padding: 7px 42px;
+    width: 90%;
+    text-transform: capitalize;
+    margin-left: -9px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    line-height: 1.4;
+    height: 66px !important;
+    display: -webkit-box;
+    line-height: 1.4;
+    text-overflow: ellipsis;
+    height: 3.1em;
+}
+.box::before{
+    content: '';
+    background-color: #f40;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 10px;
+    height: 55px;
+}
+.box::after{
+    content: '';
+    background-color: #f40;
+    position: absolute;
+    right: -36px;
+    top: 0;
+    width: 7px;
+    height: 55px;
+}
+
+.but button{
+    border: none;
+    transform: skew(-15deg);
+    letter-spacing: 3px;
+    padding: 15px 20px;
+    background-color: #a1a1b2;
+    font-family: 'Exo';
+    font-size: 18px;
+    color: white;
+    outline: none;
+    text-transform: uppercase;
+    border-radius: 0;
+
+    transition: all .5s ease-in;
+    margin-bottom: 20px;
+ 
+}
+/* .galrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.but button.active{
+    background-color: #f40;
+}
+@media(min-width:992px) and (max-width:1280px) {
+    .inner_sec h1{
+        text-align: center;
+        /* left: 50%; */
+        font-size: 120px;
+    }
+    .inner_sec img{
+        left: 0px;
+    }
+    .box{
+        padding: 7px 26px;
+    }
+}
+
+@media(min-width:768px) and (max-width:990px) {
+.outer_sec img{
+    display: none;
+}
+.inner_sec h1{
+    text-align: center;
+    left: 50%;
+    font-size: 120px;
+}
+.inner_sec img{
+    left: 95px;
+    top: 120px;
+}
+.box{
+    padding: 7px 30px;
+    height: 4.9em !important;
+    /* width: 83%; */
+    /* margin-left: 2px; */
+}
+.box::before{
+   height:4.9em;
+}
+.box::after{
+   height: 4.9em;
+}
+
+
+}
+
+
+@media(max-width:767px) {
+    .hidden{
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+    }
+.container{
+    background-image: url("./puneri-tv-mob-banner-s11.jpg");
+}
+.box{
+    padding: 7px 9px;
+    height: 5.1em !important;
+    width: 83%;
+    margin-left: 2px;
+}
+.box::before{
+   height: 5.1em;
+}
+.box::after{
+   height: 5.1em;
+}
+.inner_sec,.outer_sec{
+    display: none;
+}
+.but button{
+    padding: 11px 14px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    
+
+}
+.galrow{
+    display: none;
+}
+.videoThumbnail{
+    height: 250px;
+}
+.vidlogo{
+    top: -64%;
+    right: -32%;
+}
+}

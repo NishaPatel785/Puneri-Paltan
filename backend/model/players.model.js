@@ -1,0 +1,99 @@
+import mongoose from "mongoose";
+import playersCategoryModel from "./players.category.model";
+
+const Schema=mongoose.Schema;
+
+const PlayerSchema=new Schema({
+    f_name:{
+        type:String,
+        required:true
+    },
+    l_name:{
+        type:String,
+        required:true
+    },
+    category:{
+        type:Schema.Types.ObjectId,
+        required:true,
+        ref:"category"
+    },
+    profile_image:{
+        type:String,
+        default:null
+    },
+    full_image:{
+        type:String,
+        default:null
+    },
+    bg_image:{
+        type:String,
+        default:null
+    },
+    mobile_image:{
+        type:String,
+        default:null
+    },
+    jersey_no:{
+        type:Number,
+        default:null
+    },
+    position:{
+        type:String,
+        default:null
+    },
+    date_of_birth:{
+        type:String,
+        default:null
+    },
+    nationality:{
+        type:String,
+        default:null
+    },
+    Matches_played:{
+        type:Number,
+        default:null
+    },
+    total_points:{
+        type:Number,
+        default:null
+    },
+    most_points_in_a_match:{
+        type:Number,
+        default:null
+    },
+    not_out_percentage:{
+        type:String,
+        default:null
+    },
+    no_of_super_raids:{
+        type:Number,
+        default:null
+    },
+    super_10s:{
+        type:Number,
+        default:null
+    },
+    avg_raid_points:{
+        type:Number,
+        default:null
+    },
+    no_of_super_tackles:{
+        type:Number,
+        default:null
+    },
+    total_tacle_points:{
+        type:Number,
+        default:null
+    },
+    CreatedAt:{
+        type:Date,
+        default:Date.now()
+    },
+    Success:{
+        type:Number,
+        default:1
+    }
+
+})
+
+export default mongoose.model("players",PlayerSchema)

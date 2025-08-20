@@ -1,0 +1,231 @@
+.h2{
+    letter-spacing: 7px;
+    margin: 0;
+    color: #ff7500;
+    text-align: center;
+}
+.overall{
+    background-color: #edeef2;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    width:100%;
+}
+.num{
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+   bottom: 30px;
+}
+.points{
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    font-family: "Exo";
+    width: 150px;
+    margin: 30px auto 0;
+    padding: 10px 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+.des{
+    font-family: "Exo";
+    color: #000;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.attack{
+    text-align: center;
+    background-color: #edeef2;
+    color: #000;
+    font-family: "Exo";
+    width: 150px;
+    margin: 30px auto 0;
+    padding: 10px 0;
+    font-size: 40px;
+}
+.pad{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    width: 100%;
+}
+.border{
+    border-right:2px solid #dbdbdb;;
+}
+.circlediv{
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.circle{
+    background: linear-gradient(90deg, #ff7500 50%, transparent 50%, transparent), linear-gradient(180deg, #ff7500 50%, #ff7500 50%, #ff7500);
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    height: 230px;
+    margin: 2em auto;
+    position: relative;
+    width: 230px;
+    transition: all .3s linear;
+}
+.circle::before{
+    background-color: #fafafa;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: rgba(0, 0, 0, 0.54);
+    content: "";
+    font-size: 32px;
+    font-weight: bold;
+    height: 80%;
+    left: 50%;
+    line-height: 1.4;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
+.circle p{
+    color: #000;
+    font-family: "Exo";
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.outervalign{
+    display: table;
+    height: 270px;
+    width: 100%;
+}
+.outervalign h6{
+    color: #000;
+    font-family: "Exo";
+    font-size: 40px;
+    box-shadow: 1px 1px 20px #e8e8e8;
+    width: 50%;
+    text-align: center;
+    transform: skew(-10deg);
+    line-height: 110%;
+    margin: .5rem 0 .4rem 0;
+
+}
+.outervalign p{
+    font-family: "Exo";
+    color: #000;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.4;
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
+.border2{
+        border-right: 2px solid #dbdbdb;
+    }
+.circle2{
+    background: linear-gradient(90deg, #ff7500 50%, transparent 50%, transparent), linear-gradient(245deg, #121237 50%, #ff7500 50%, #ff7500);
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    height: 230px;
+    margin: 2em auto;
+    position: relative;
+    width: 230px;
+    transition: all .3s linear;
+}
+.circle2::before{
+    background-color: #fafafa;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: rgba(0, 0, 0, 0.54);
+    content: "";
+    font-size: 32px;
+    font-weight: bold;
+    height: 80%;
+    left: 50%;
+    line-height: 1.4;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%)
+}
+.circle2 p{
+    color: #000;
+    font-family: "Exo-SemiBold";
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    line-height: 1.4;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 52%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.circle2 span{
+    font-size: 52px;
+    line-height: 1;
+}
+.innervalign h6{
+    color: #000;
+    font-family: "Exo-SemiBold";
+    background-color: #fff;
+    font-size: 40px;
+    box-shadow: 1px 1px 20px #e8e8e8;
+    width: 70%;
+    text-align: center;
+    transform: skew(-10deg);
+}
+.innervalign p{
+    font-family: "Exo-Regular";
+    color: #000;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.4;
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width:991px) and (max-width:1280px) {
+    .main{
+        width: 100%;
+    }
+   }
+
+   /* tablet */
+@media(min-width:768px) and (max-width:990px) {
+    .overall{
+        display: flex;
+        flex-direction: column;
+    }
+    .pad{
+        display: flex;
+        flex-direction: column;
+    }
+   }
+
+@media (max-width:767px) {
+    .h2{
+        font-size: 30px !important;
+        padding: 30px 0px;
+        width: 100%;
+        margin-right: 0px;
+    }
+    .pad{
+        width: 100%;
+    }
+}
+
+

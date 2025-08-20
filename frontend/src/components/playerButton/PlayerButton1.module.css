@@ -1,0 +1,14 @@
+.btn{
+    font-size: 22px;
+    font-family: "Exo";
+    text-transform: uppercase;
+    background-color: #f40;
+    color: white;
+    width: 200px;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 10px 0;
+    margin: auto;
+    border:none;
+    transform: skew(-15deg);
+}

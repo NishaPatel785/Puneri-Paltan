@@ -1,0 +1,48 @@
+.parentscroll{
+    position: relative;
+    /* padding-top: 100px; */
+}
+.line{
+    height: 120px;
+    top: 90px;
+    width: 2px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(50%);
+    z-index: 9;
+    color: black;
+    
+}
+.scroll{
+    position: absolute;
+    left: 53%;
+    /* top: 100%; */
+    transform: translateX(-50%);
+     z-index: 10;
+}
+.scroll h6{
+    padding-top:120px ;
+    color: white;
+    letter-spacing: 65px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+
+@media screen and (min-width:991px) and (max-width:1280px) {
+    
+   }
+
+   /* tablet */
+@media(min-width:768px) and (max-width:990px) {
+
+}
+@media (max-width:767px) {
+    .scroll h6{
+    letter-spacing: 36px;
+        
+    }
+
+}
